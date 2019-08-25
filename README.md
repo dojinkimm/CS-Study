@@ -1,2 +1,2 @@
 # TIL
-What I learned today 
+매일 배운 것을 기록하는 공간입니다.
