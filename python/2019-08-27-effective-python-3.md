@@ -102,7 +102,7 @@ class MyChildClass(MyBaseClass):
 
 만약에 diamond inheritance가 발생하면 원하지 않는 결과가 나올 수 있다. Diamond inheritance는 subclass(ThisWay)가 2개의 다른 class(TimessFive, PlusTwo)를 inherit 하고, 다시 이 2개의 class는 하나의 class(MyBaseClass)에서 inherit을 할 때 발생한다.  
 
-<img src="/assets/imgs/python/effective_python_4.png"/>
+<img src="./images/effective_python_3.png"/>
 
 
 ```python

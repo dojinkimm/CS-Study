@@ -10,7 +10,7 @@ Concurrency는 2개 혹은 그 이상의 작업들이 시작, 실행, 끝나기�
 
 Parallelism은 말 그래도 작업들이 동시에 진행되는 것이다. 예를 들어, multiple CPU core를 가진 컴퓨터에서 multiple 프로그램들이 동시에 실행이 된다. 각 CPU core는 다른 프로그램들이 동시에 진행될 수 있도록 해준다.  
 
-<img src="/assets/imgs/python/effective_python_5.png"/>
+<img src="./images/effective_python_5.png"/>
 
 
 둘의 가장 큰 차이점은 **속도**이다. 프로그램이 parallel하게 진행이 되면 전체 실행시간에서 반을 줄 일 수 있다. 반면에, concurrent 프로그램은 여러 프로그램들이 돌아가는 것처럼 보이지만 전체 실행 시간은 줄어들지 않는다.
