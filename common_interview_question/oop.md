@@ -120,7 +120,7 @@ def addition(a,b,c):
 print(addition(1,2))
 print(addition(1,2,3))
 ```
-s
+
 ### 참고한 사이트 및 영상
 
 [Object-oriented Programming in 7 minutes](https://www.youtube.com/watch?v=pTB0EiLXUC8)
