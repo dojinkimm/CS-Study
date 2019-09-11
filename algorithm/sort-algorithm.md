@@ -58,6 +58,7 @@ In-place 알고리즘이란 추가적인 메모리 공간을 많이 필요로 �
 
 <hr/>
 
-# Selection Sort(선택 정렬)
-
-![](images/selection_sort_pseudo.png)
+## Selection Sort
+<div align="center">
+<img src="images/selection_sort_pseudo.png" width=300/>>
+</div>
