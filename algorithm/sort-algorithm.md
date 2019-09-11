@@ -57,7 +57,7 @@ Inplace 알고리즘이란 추가적인 메모리 공간을 많이 필요로 하
 
 즉, n 길이의 리스트가 있고, 이 리스트를 정렬할 때 추가적으로 메모리 공간을 할당하지 않아도 정렬이 이뤄진다면 in-place 알고리즘이라고 불릴 수 있는 것이다.
 <div align="center">
-<img src="/mages/inplace.png" width=250/>
+<img src="images/inplace.png" width=250/>
 </div>
 
 In-place하지 않은 알고리즘은 n 길이의 리스트를 정렬할 때 n 만큼의 메모리보다 더 많은 메모리 공간을 할당한다. 즉, 이런 알고리즘들은 space complexity가 높다. 
