@@ -9,7 +9,17 @@
 - Count Sort(카운트 정렬)
 - Bucket Sort(버킷 정렬)
 
-[Time Complexity](https://www.notion.so/611b91258ac0485c93529d30e3d19bc5)
+| Name           | Average Case | Worst Case | 비고                                                                           |
+|----------------|--------------|------------|--------------------------------------------------------------------------------|
+| Selection Sort | О(n^2)       | О(n^2)     |                                                                                |
+| Insertion Sort | О(n^2)       | О(n^2)     | small input에 적합                                                             |
+| Bubble Sort    | О(n^2)       | О(n^2)     |                                                                                |
+| Quick Sort     | O(nlgn)      | О(n^2)     |                                                                                |
+| Merge Sort     | O(nlgn)      | O(nlgn)    |                                                                                |
+| Heap Sort      | O(nlgn)      | O(nlgn)    | complete binary tree                                                           |
+| Radix Sort     | O(nk)        | O(nk)      |                                                                                |
+| Count Sort     | O(n+k)       | O(n+k)     | 비교를 하지 않고 정렬을 한다. 다만, n input은 int여야 하고, 0~k까지 여야 한다. |
+| Bucket Sort    | O(n+k)       | О(n^2)     |                                                                                |
 
 ## Stable Sort
 
