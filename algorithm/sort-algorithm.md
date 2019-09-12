@@ -92,10 +92,10 @@ In-place하지 않은 알고리즘은 n 길이의 리스트를 정렬할 때 n �
 4. 만약 min 값이 바뀌었다면 i 자리의 item과 min 자리의 item을 바꾼다.
 5. i += 1을 하고 1번으로 돌아간다.
 
-한 iteration에 list내의 모든 item을 살펴보고, 이러한 과정을 list의 길이만큼 진행하기 때문에 이 sorting algorithm의 시간 복잡도는 `O(n^2)`가 되는 것이다. iteration 수는 언제나 ist 길이와 같기 때문에 average와 worst case에서의 시간복잡도가 같다.
+한 iteration에 list내의 모든 item을 살펴보고, 이러한 과정을 list의 길이만큼 진행하기 때문에 이 sorting algorithm의 시간 복잡도는 `O(n^2)`가 되는 것이다. iteration 수는 언제나 i의 길이와 같기 때문에 average와 worst case에서의 시간복잡도가 같다.
 
 <div align="center">
-<img src="images/selection_sort.png" width=300/>
+<img src="images/selection_sort.jpg" width=300/>
 </div>
 
 source: [stackoverflow_selection_sort](https://stackoverflow.com/questions/36700830/selection-sort-algorithm)
