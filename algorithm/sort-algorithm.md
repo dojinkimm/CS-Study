@@ -81,7 +81,7 @@ In-place하지 않은 알고리즘은 n 길이의 리스트를 정렬할 때 n �
 
 ## Selection Sort
 <div align="center">
-<img src="images/selection_sort_pseudo.png" width=300/>
+<img src="images/selection_sort_pseudo.png" width=400/>
 </div>
 
 위는 Selection Sort(선택정렬)의 pseudo-코드이다. 알고리즘은 매 iteration마다 2가지 동작을 수행한다. list내에서 가장 작은 값을 찾고 list앞에다 정렬한다. 그 다음에 정렬된 값보다 하나 큰 값에서 다시 같은 알고리즘을 적용한다. 글로 풀어보면 다음과 같다:
@@ -95,11 +95,12 @@ In-place하지 않은 알고리즘은 n 길이의 리스트를 정렬할 때 n �
 한 iteration에 list내의 모든 item을 살펴보고, 이러한 과정을 list의 길이만큼 진행하기 때문에 이 sorting algorithm의 시간 복잡도는 `O(n^2)`가 되는 것이다. iteration 수는 언제나 i의 길이와 같기 때문에 average와 worst case에서의 시간복잡도가 같다.
 
 <div align="center">
-<img src="images/selection_sort.jpg" width=300/>
+<img src="images/selection_sort.jpg" width=400/>
 </div>
 
+<div align="center">
 source: [stackoverflow_selection_sort](https://stackoverflow.com/questions/36700830/selection-sort-algorithm)
-
+</div>
 iteration 과정을 간단히 살펴보자
 
 첫번째 iteration에서는 7부터 시작해서 list 전체를 흝고 1이 제일 작은 것을 파악했고 1을 맨 앞에 위치했다.
@@ -122,10 +123,10 @@ import random
 def selection_sort(num):
     for i in range(len(num)):
         minimum = i
-        for j in range(i+1, len(num)):
-            if num[j] < num[minimum]:
-                minimum = j
-        if minimum != i:
+        for j in range(i+1, len(num)): # i보다 하나 큰 수부터 list끝까지 iterate한다
+            if num[j] < num[minimum]: 
+                minimum = j # list내에 제일 작은 숫자를 찾고 그 index를 minumum 변수에 저장한다
+        if minimum != i: 
             num[i], num[minimum] = num[minimum], num[i]
     return num
 
