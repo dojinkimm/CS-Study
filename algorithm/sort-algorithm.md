@@ -170,7 +170,7 @@ step별로 풀어보면 다음과 같다:
 
 
 <div align="center">
-<img src="images/selection_sort.jpg" width=400/>
+<img src="images/insertion_sort.png" width=400/>
 </div>
 
 
