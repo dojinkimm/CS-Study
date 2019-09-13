@@ -144,15 +144,15 @@ selection = selection_sort(number)
 print(selection)
 ```
 
-<br/>>
+<br/>
 
 ## Insertion Sort
 
 <div align="center">
-<img src="images/insertion_ssort_pseudo.png" width=400/>
+<img src="images/insertion_sort_pseudo.png" width=400/>
 </div>
 
-위는 Insertion Sort(삽입정렬)의 pseudo-코드이다. j가 2부터 시작하고 이는 list내 2번째 item을 의미한다, 즉, 프로그래밍할 때는 index 1을 의미한다. 이 알고리즘은 list를 iterate하면서 list 앞 쪽부터 정렬을 해나간다. 정렬을 하고 나서 그 다음 item으로 이동하고 해당 item을 정렬된 왼쪽 list에 정렬된 순서에 삽입을 한다. <br/>>
+위는 Insertion Sort(삽입정렬)의 pseudo-코드이다. j가 2부터 시작하고 이는 list내 2번째 item을 의미한다, 즉, 프로그래밍할 때는 index 1을 의미한다. 이 알고리즘은 list를 iterate하면서 list 앞 쪽부터 정렬을 해나간다. 정렬을 하고 나서 그 다음 item으로 이동하고 해당 item을 정렬된 왼쪽 list에 정렬된 순서에 삽입을 한다. <br/>
 
 step별로 풀어보면 다음과 같다:
 
@@ -170,7 +170,7 @@ step별로 풀어보면 다음과 같다:
 
 
 <div align="center">
-<img src="images/selection_sort.png" width=400/>
+<img src="images/selection_sort.jpg" width=400/>
 </div>
 
 
@@ -222,7 +222,7 @@ print(insertion)
 ## Bubble Sort
 
 <div align="center">
-<img src="images/bubble_sort_psudo.png" width=400/>
+<img src="images/bubble_sort_pseudo.png" width=400/>
 </div>
 
 위는 Bubble Sort(버블정렬)의 pseudo-코드이다. 정렬을 한다고 했을 때 가장 떠올리기 쉽고 구현하기 쉬운 알고리즘이라고 생각한다. 처음에 2개씩 비교를 하면서 왼쪽이 오른쪽보다 크면 바꿔서 가장 큰 값이 iteration 마다 맨 뒤에 위치하게 한다. (반대로 가장 작은 값을 맨 앞으로 위치하게 만들 수 있다)
