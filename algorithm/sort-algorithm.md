@@ -2,7 +2,7 @@
 - [Selection Sort(선택 정렬)](#Selection-Sort)
 - [Insertion Sort(삽입 정렬)](#Insertion-Sort)
 - [Bubble Sort(버블 정렬)](#Bubble-Sort)
-- Quick Sort(퀵 정렬)
+- [Quick Sort(퀵 정렬)](#Quick-Sort)
 - Merge Sort(머지 정렬)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
@@ -286,7 +286,7 @@ print(bubble)
 ## Quick Sort
 
 <div align="center">
-<img src="images/quick_sort_pseudo.png" width=400/>
+<img src="images/quick_sort_pseudo.png" width=600/>
 </div>
 
 Quick sort는 `Divide and Conquer(분할 정복)` 알고리즘 종류중 하나이다. 분할정복이란 주어진 문제를 여러 sub 문제들로 나눈 다음에 그 문제들을 해결한 다음에 합치는 것을 의미한다. Quicksort는 임의의 숫자를 기준으로 정한 다음에 그 숫자보다 작은 숫자들과 큰 숫자들에 다시 재귀를 사용해서 quick sort 알고리즘을 적용한다. 그러면 다시 그 분할된 숫자들 중에서 기준을 정하고 나눠서 quick sort를 진행한다. 
