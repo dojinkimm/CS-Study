@@ -31,6 +31,30 @@ def bubble_sort(num):
                 num[j], num[j+1] = num[j+1], num[j] # swap한다
     return num
 
+
+class QuickSort:
+    def __init__(self, num):
+        self.num = num
+
+    def quick_sort(self, p, r):
+        # p는 list시작, r은 끝, q는 중간인 pivot
+        if p<r:
+            q = self.partition(p,r)
+            self.quick_sort(p,q-1) # pivot의 왼쪽을 다시 분할한다
+            self.quick_sort(q+1,r) # pivot의 오른쪽을 다시 분할한다
+        
+
+    def partition(self, p, r):
+        x = self.num[r] # pivot 값 저장
+        i = p - 1
+        for j in range(p, r): 
+            if self.num[j] <= x: # pivot보다 작으면 해당 값을 pivot index보다 왼쪽으로 이동시킨다
+                i += 1
+                self.num[i], self.num[j] = self.num[j] ,self.num[i] 
+        self.num[i+1], self.num[r] = self.num[r], self.num[i+1] # pivot을 전체 list에 정렬된 위치에 놓는다
+        return i+1  # pivot의 위치를 리턴한다
+
+
 number = [i for i in range(10)]
 random.shuffle(number)
 print(number)
@@ -40,5 +64,9 @@ print(number)
 # insertion = insertion_sort(number)
 # print(insertion)
 
-bubble = bubble_sort(number)
-print(bubble)
+# bubble = bubble_sort(number)
+# print(bubble)
+
+quick = QuickSort(number)
+quick.quick_sort(0, len(number)-1) # list의 첫 index와 가장 마지막 index를 전달한다
+print(quick.num)
