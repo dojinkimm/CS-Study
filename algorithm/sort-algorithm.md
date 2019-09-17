@@ -394,7 +394,7 @@ Merge-sort와 Merge parameter에서 `A`는 정렬이 필요한 list이다. `p`�
 : 이 함수는 정렬되지 않은 list를 분할하는 역할을 한다
 
 - p<r 이면, 아직 정렬이 완성되지 않은 상태라고 간주해서, p와 r의 중간인 q를 구한다
-- (p~q), (q+1~r) 로 list를 분할하고 merge 함수에 보낸다.
+- (p\~q), (q+1\~r) 로 list를 분할하고 merge 함수에 보낸다.
 
 **Merge**
 
@@ -407,7 +407,7 @@ Merge-sort와 Merge parameter에서 `A`는 정렬이 필요한 list이다. `p`�
 
 
 <div align="center">
-<img src="images/merge_sort.png" width=800/>
+<img src="images/merge_sort.png" width=650/>
 </div>
 
 <div align="center">
@@ -475,8 +475,6 @@ while j < len(R):
 위에 pseudo-code와는 다르게 구성을 했다. 이전에는 함수 2개를 만들어서 recursion으로 했지만, 하나의 함수로 같은 알고리즘을 구현했다.
 
 ```python
-import random
-
 import random
     
 def merge_sort(num): 
