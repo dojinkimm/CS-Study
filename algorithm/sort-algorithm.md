@@ -3,7 +3,7 @@
 - [Insertion Sort(삽입 정렬)](#Insertion-Sort)
 - [Bubble Sort(버블 정렬)](#Bubble-Sort)
 - [Quick Sort(퀵 정렬)](#Quick-Sort)
-- Merge Sort(머지 정렬)
+- [Merge Sort(머지 정렬)](#Merge-Sort)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
 - Count Sort(카운트 정렬)
@@ -380,7 +380,7 @@ print(quick.num)
 ## Merge Sort
 
 <div align="center">
-<img src="images/merge_sort_pseudo.png" width=600/>
+<img src="images/merge_sort_pseudo.png" width=400/>
 </div>
 
 Merge Sort(합병정렬)는 `Divide and Conquer(분할 정복)` 알고리즘 종류중 하나이다. 분할정복이란 주어진 문제를 여러 sub 문제들로 나눈 다음에 그 문제들을 해결한 다음에 합치는 것을 의미한다. 
