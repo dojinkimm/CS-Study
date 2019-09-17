@@ -55,6 +55,42 @@ class QuickSort:
         return i+1  # pivot의 위치를 리턴한다
 
 
+def merge_sort(num): 
+    if len(num) >1: 
+        mid = len(num)//2 # list의 중간을 찾는다
+        L = num[:mid] # list의 왼쪽을 분할한다
+        R = num[mid:] # list의 오른쪽을 분할한다
+  
+        merge_sort(L) # 왼쪽 list를 정렬한다
+        merge_sort(R) # 오른쪽 list를 정렬한다
+  
+        i = j = k = 0
+          
+        # 일시적으로 만든 L과 R을 비교한다
+        while i < len(L) and j < len(R): 
+            if L[i] < R[j]: # 왼쪽 list에 있던 item이 더 작으면 L[i]를 list 왼쪽에 위치하게 한다
+                num[k] = L[i] 
+                i+=1
+            else: # 오른쪽 list에 있던 item이 더 작으면 R[j]를 list 왼쪽에 위치하게 한다
+                num[k] = R[j] 
+                j+=1
+            k+=1
+          
+        # 위에 len(L) and len(R)이었기 때문에, 더 긴 list의 숫자가 남았을 것이다,
+        # 그 숫자들을 이어 붙힌다.
+        # 남은 숫자들은 크기 때문에 남은 것이기에 오른쪽에 붙혀진다
+        while i < len(L): 
+            num[k] = L[i] 
+            i+=1
+            k+=1
+          
+        while j < len(R): 
+            num[k] = R[j] 
+            j+=1
+            k+=1
+
+         
+
 number = [i for i in range(10)]
 random.shuffle(number)
 print(number)
@@ -67,6 +103,9 @@ print(number)
 # bubble = bubble_sort(number)
 # print(bubble)
 
-quick = QuickSort(number)
-quick.quick_sort(0, len(number)-1) # list의 첫 index와 가장 마지막 index를 전달한다
-print(quick.num)
+# quick = QuickSort(number)
+# quick.quick_sort(0, len(number)-1) # list의 첫 index와 가장 마지막 index를 전달한다
+# print(quick.num)
+
+merge = merge_sort(number)
+print(number)
