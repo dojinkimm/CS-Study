@@ -89,6 +89,37 @@ def merge_sort(num):
             j+=1
             k+=1
 
+class HeapSort:
+    def __init__(self, num, heapSize):
+        self.num = num
+        self.heapSize = heapSize
+
+    def heap_sort(self):
+        for i in range(len(self.num), -1, -1): 
+            self.max_heapify(i) 
+   
+        for i in range(len(self.num)-1, 0, -1):
+            self.num[0], self.num[i] = self.num[i], self.num[0]
+            self.heapSize -= 1
+            self.max_heapify(0)
+
+
+    def max_heapify(self, i):
+        largest = i
+        L = 2 * i + 1
+        R = 2 * i + 2
+        
+        if (L < self.heapSize) and (self.num[L] > self.num[i]):
+            largest = L
+        else:
+            largest = i
+
+        if (R < self.heapSize) and (self.num[R] > self.num[largest]):
+            largest = R
+        
+        if largest != i:
+            self.num[i], self.num[largest] = self.num[largest], self.num[i]
+            self.max_heapify(largest)
          
 
 number = [i for i in range(10)]
@@ -107,5 +138,9 @@ print(number)
 # quick.quick_sort(0, len(number)-1) # list의 첫 index와 가장 마지막 index를 전달한다
 # print(quick.num)
 
-merge = merge_sort(number)
-print(number)
+# merge = merge_sort(number)
+# print(number)
+
+heap = HeapSort(number, len(number))
+heap.heap_sort()
+print(heap.num)
