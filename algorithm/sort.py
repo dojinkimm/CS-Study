@@ -122,6 +122,23 @@ class HeapSort:
             self.max_heapify(largest)
          
 
+def couting_sort(A, k):
+    B = [0] * len(A)
+    C = [0] * (k+1)
+
+    for i in range(len(A)): # 각 element가 몇개있는지 C에 저장한다
+        C[A[i]] += 1
+    
+    for i in range(1,len(C)): # C를 누적값으로 바꾼다
+        C[i] += C[i-1]
+
+    for i in range(len(A)): # C를 indexing해서 B에 저장한다
+        B[C[A[i]]-1] = A[i]
+        C[A[i]] -= 1
+
+    return B
+
+
 number = [i for i in range(10)]
 random.shuffle(number)
 print(number)
@@ -141,6 +158,11 @@ print(number)
 # merge = merge_sort(number)
 # print(number)
 
-heap = HeapSort(number, len(number))
-heap.heap_sort()
-print(heap.num)
+# heap = HeapSort(number, len(number))
+# heap.heap_sort()
+# print(heap.num)
+
+counting_number = [1, 0, 3, 1, 0, 2, 5, 2, 1, 4]
+print(counting_number)
+count = couting_sort(counting_number, max(counting_number))
+print(count)
