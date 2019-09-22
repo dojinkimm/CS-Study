@@ -653,7 +653,7 @@ Counting Sort(계수정렬)은 숫자들간 **비교를 하지 않고 정렬을*
 3. **k=O(n)**으로 나타나질 수 있어야 한다
 
 <div align="center">
-<img src="images/counting_sort_pseudo.png" width=650/>
+<img src="images/counting_sort_pseudo.png" width=500/>
 </div>
 
 이제 pseudo 코드를 라인별로 분석해보려고 한다.
