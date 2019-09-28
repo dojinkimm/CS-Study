@@ -7,7 +7,7 @@
 - [Heap Sort(힙 정렬)](#Heap-Sort)
 - [Counting Sort(계수 정렬)](#Counting-Sort)
 - [Radix Sort(기수 정렬)](#Radix-Sort)
-- [Bucket Sort(버킷 정렬)](#Buckeet-Sort)
+- [Bucket Sort(버킷 정렬)](#Bucket-Sort)
 
 | Name           | Average Case | Worst Case | 비고                                    |
 |----------------|--------------|------------|--------------------------------------------------------------------------------------|
