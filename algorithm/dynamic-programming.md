@@ -121,7 +121,6 @@ W가 늘어도 N-1로 고정되어있을 때 그 밑의 값들은 변하지 않�
 <img src="images/knapsack_6.png" width=500/>
 </div>
 
-### 0-1 Knapsack 문제, Python풀이
 
 ```python
 N, W = 4, 5
@@ -182,7 +181,7 @@ print(knap)
 
 knap[j-bag[i][0]]이 무슨 일을 하는지 알면 이해하는 것이 더 쉬워진다. 기존의 index에서 새로 들어온 물품의 무게를 빼는 것이다. 그렇게 해서 나온 index는 새로 들어온 물품과 함께 선택할 수 있는 물품의 무게가 되는 것이다. 그렇다는 것은 해당 index의 값은 기존 물품의 benefit(가치)이고 그 값에 새로운 물품의 benefit(가치)를 더하면 새로운 benefit(가치)를 구할 수 있게 되는 것이다. 
 
-# Knapsack - fractional (Greedy)
+## Knapsack - fractional (Greedy)
 
 지금까지는 물품들을 쪼갤 수 없다고 가정했기 때문에 DP를 사용해서만 문제를 풀 수 있었다.  Fractional knapsack 문제는 물품들을 쪼갤 수 있다고 가정하기 때문에 **Greedy 알고리즘으로** 풀 수 있다. 기본 아이디어는 다음과 같다:
 
